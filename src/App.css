@@ -1,38 +1,247 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.65;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f2f2f2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+select,
+button,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+  display: block;
+  width: 100%;
+}
+
+a,
+button,
+label,
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  Helpers
+*/
+
+.width {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+main {
+  padding: 60px 0;
+}
+
+/*
+  Header
+*/
+
+.header {
+  background: #333;
+  color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header .width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 8px;
+  font-weight: 300;
+}
+
+.header-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-nav a {
+  color: white;
+  font-weight: 600;
+}
+
+/*
+  Buttons
+*/
+
+.button {
+  display: inline-block;
+  padding: 0 24px;
+  background: #478ddf;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 12px;
+}
+
+.button.fullWidth {
+  display: block;
+  width: 100%;
+}
+
+/*
+  Box
+*/
+
+.box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* Landing Page */
+.landing h1 {
+  padding-top: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*
+  Search Box
+*/
+
+.search-box {
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-box form {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 10px;
+}
+
+.search-box h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.search-box input {
+  line-height: 60px;
+  padding: 0 24px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  flex: 1;
+  background: white;
+}
+
+/* Search Results */
+.coinreturn {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.coinreturn div {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.coinreturn img {
+  /* border: 1px solid black; */
+}
+
+.coinreturn button {
+  background-color: #478ddf;
   color: white;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+/*
+  Top Coins
+*/
+
+.top-coins-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-coins h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+
+.top-coin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.cryptosecurity h1 {
+  text-align: center;
+  padding: 32px 0px;
+}
+
+.cryptosecurity h2,
+.cryptosecurity article {
+  padding-bottom: 15px;
 }
