@@ -83,6 +83,8 @@ svg {
 
 main {
   padding: 60px 0;
+  background-image: url("../public/images/cryptonicbc.svg");
+  background-size: auto;
 }
 
 /*
