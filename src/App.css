@@ -94,15 +94,16 @@ main {
 .header {
   background: #333;
   color: #fff;
-  height: 80px;
+  padding: 20px 0px;
   display: flex;
   align-items: center;
 }
-
-.header .width {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media (min-width: 600px) {
+  .header .width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .header h1 {
@@ -111,11 +112,12 @@ main {
   letter-spacing: 8px;
   font-weight: 300;
 }
-
-.header-nav {
-  display: inline-flex;
-  align-items: center;
-  gap: 50px;
+@media (min-width: 600px) {
+  .header-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .header-nav a {
